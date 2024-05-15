@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Inicio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto foi criado com: [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Iniciando o sistema
 
-In the project directory, you can run:
+### Para rodar o sistema após baixar o repositório, rode os comandos no terminal:
 
-### `npm start`
+ `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### depois de toda instalação dos pacotes node, rode:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ `npm start`
+    O sistema devera iniciar na porta: localhost:3000
+    pode usar o atalha (ctrl + click) na url para abrir o navegador na aba do sistema: [http://localhost:3000]
 
-### `npm test`
+## Tecnologias utilizadas
+<a href="https://axios-http.com/ptbr/docs/intro">Axios</a>: utilizado para criar as chamadas HTTP para api do covid-19.
+<a href="https://react.dev/">React</a> Bibliotéca utilizada para criar o sistema.
+<a href="https://momentjs.com/">Moment</a> Utilizado para manipulação de datas.
+<a href="https://mui.com/">Material-UI</a> Biblioteca utilizada para estilação do sistema.
+<a href="https://www.npmjs.com/package/react-router-dom">React-Router-Dom</a>Utilizado para criar as rotas do sistema.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Funcionalidades do sistema
 
-### `npm run build`
+- [x]Consultar os casos de covid no Brasil
+- [x]Consultar os casos de covid por estado do Brasil
+- [x]Consultar os casos de covid de todos os estados por data 
+- [x]Consultar os casos de covid em outros paises
+- [x]Formulario para envio de dados do covid em um estado do Brasil
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Layout
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Tela inicial](./src/assets/tela1.png)
+![Tela de consulta de casos no Brasil](./src/assets/tela2.png)
+![Tela de consultas de casos por estado ou data](./src/assets/tela3.png)
+![Tela de consulta de casos em outros paises](./src/assets/tela4.png)
+![Formulario de envio de dados](./src/assets/tela5.png)
+![Validação de formulario](./src/assets/tela6.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Desafio
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esse sistema foi criado para corresponder aos seguintes requisistos:  
+  <p align="justify">
+ Criar uma consulta que seja possível visualizar o status atual de todos os estados da
+ federação ou de apenas um estado, onde seja possível selecionar o estado em um select ou algum
+ componente similar. O status é a quantidade de casos, mortos, suspeitos.
+ Criar uma consulta onde seja possível visualizar o status do COVID 19 no Brasil em uma data
+ específica.
+ Criar uma consulta que permite consultar o status da COVID 19 em outros países.
+ Criar um formulário onde seja possível preencher o campo de estado, casos, confirmados,
+ mortos, recuperados e data, onde todos os campos devem ser de preenchimento obrigatório. 
+ Apesar de não ter API para enviar os dados do formulário, logo após as validações acima, exibir uma
+ mensagem natela ou no console com o JSON gerado dos dados do formulário que seria enviado para
+ umaeventual API
+</p>

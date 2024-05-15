@@ -2,6 +2,7 @@
 import { Card, CardContent, Typography } from "@mui/material"
 import "./style.css"
 
+//essa tela recebe os dados da api para popular a consulta de todos estados ou algum em especifico 
 function States({allStates}){
     return(
         <div className="statesCases">

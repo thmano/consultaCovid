@@ -11,6 +11,7 @@ import {
 import moment from "moment";
 
 function FormData() {
+  //states para receber os valores do formularios
   const [estados, setEstado] = useState("");
   const [casos, setCasos] = useState("");
   const [confirmados, setConfirmados] = useState("");
@@ -18,16 +19,21 @@ function FormData() {
   const [recuperados, setRecuperados] = useState("");
   const [data, setDatas] = useState("");
 
+  //states para validação de formulario
   const [estadosError, setEstadoError] = useState(false);
   const [casosError, setCasosError] = useState(false);
   const [confirmadosError, setConfirmadosError] = useState(false);
   const [mortesError, setMortesError] = useState(false);
   const [recuperadosError, setRecuperadosError] = useState(false);
 
+  //state para exibir a menssagem de alerta de campos obrigatórios
   const [validatealert, setValidateAlert] = useState(false);
 
+  //state para exibir a menssagem de data invalida
   const [dateAlertText, setDateAlertText] = useState(false);
 
+
+  //essa função é responsavel pelo controle dos campos vazios ou invalidos, primeiro valido se os campos estão devidamente populados (o campo de data tem uma vaçidação diferente pois não usei o datepicker do material-ui, segundos minhas pesquisas esse input só esta disponivel para versão paga da biblioteca)
   function onSubmit(event) {
     event.preventDefault();
     let form;
@@ -43,6 +49,7 @@ function FormData() {
       : (document.querySelector(".inputDateForm").style.border =
           "1px solid #b7b7b7");
 
+    //aqui novamente verifico se os campos não estão vazios e além disso valido se o campo date não está com uma data futura, se todas validações passarem um objeto é montado e exibido no console do navegador
     if (
       estados === "" ||
       casos === "" ||

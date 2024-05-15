@@ -22,16 +22,19 @@ function Brasil() {
   const [states, setStates] = useState("");
   const [dateBr, setDateBr] = useState();
 
+  //essa função serve para pegar qualquer atualização do select de estados, que por sua vez ao ser alterado dispara o useEffect que refaz as requisições à api
   const handleChange = (event) => {
     setStates(event.target.value);
     setDateBr(undefined);
   };
 
+  //essa função fica escutando as alterações no campo date que por sua vez dispara o useEffect que refaz as requisições à api
   const dateCnage = (event) => {
     const newDate = moment(new Date(event.target.value)).add(1, 'days').format("YYYYMMDD");
     setDateBr(newDate);
   };
 
+  //aqui acontece toda magica da tela, por esse useEffect validamos se as variaveis para fazer a requisição estão corretamentes preenchidas, após devidas validações as consultas à api são feitas e preenche os devidos 'states' para popular a tela
   useEffect(() => {
     api.get("brazil/").then((response) => setBrasilCases(response.data.data));
     if (

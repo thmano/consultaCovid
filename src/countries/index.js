@@ -3,6 +3,7 @@ import "./style.css"
 import { useEffect, useState } from "react"
 import { api } from "../services/api";
 
+//essa tela consulta api para popular a consulta de todos paises
 function Countries(){
     const [allcountries, setAllcountries] = useState()
 

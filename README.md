@@ -11,14 +11,14 @@ Esse projeto foi criado com: [Create React App](https://github.com/facebook/crea
 ### depois de toda instalação dos pacotes node, rode:
 
  `npm start`
-    O sistema devera iniciar na porta: localhost:3000
-    pode usar o atalha (ctrl + click) na url para abrir o navegador na aba do sistema: [http://localhost:3000]
+    O sistema devera iniciar na porta: localhost:3000<br>
+    pode usar o atalho (ctrl + click) na url para abrir o navegador na aba do sistema: [http://localhost:3000]
 
 ## Tecnologias utilizadas
-<a href="https://axios-http.com/ptbr/docs/intro">Axios</a>: utilizado para criar as chamadas HTTP para api do covid-19.
-<a href="https://react.dev/">React</a> Bibliotéca utilizada para criar o sistema.
-<a href="https://momentjs.com/">Moment</a> Utilizado para manipulação de datas.
-<a href="https://mui.com/">Material-UI</a> Biblioteca utilizada para estilação do sistema.
+<a href="https://axios-http.com/ptbr/docs/intro">Axios</a>: utilizado para criar as chamadas HTTP para api do covid-19.<br>
+<a href="https://react.dev/">React</a> Bibliotéca utilizada para criar o sistema.<br>
+<a href="https://momentjs.com/">Moment</a> Utilizado para manipulação de datas.<br>
+<a href="https://mui.com/">Material-UI</a> Biblioteca utilizada para estilação do sistema.<br>
 <a href="https://www.npmjs.com/package/react-router-dom">React-Router-Dom</a>Utilizado para criar as rotas do sistema.
 
 ## Funcionalidades do sistema

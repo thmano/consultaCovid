@@ -14,6 +14,9 @@ Esse projeto foi criado com: [Create React App](https://github.com/facebook/crea
     O sistema devera iniciar na porta: localhost:3000<br>
     pode usar o atalho (ctrl + click) na url para abrir o navegador na aba do sistema: [http://localhost:3000]
 
+## Demo
+<a href="https://consulta-covid.vercel.app/">Demo - vercel</a>
+
 ## Tecnologias utilizadas
 <a href="https://axios-http.com/ptbr/docs/intro">Axios</a>: utilizado para criar as chamadas HTTP para api do covid-19.<br>
 <a href="https://react.dev/">React</a> Bibliotéca utilizada para criar o sistema.<br>

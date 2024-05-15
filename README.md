@@ -18,7 +18,7 @@ Esse projeto foi criado com: [Create React App](https://github.com/facebook/crea
 <a href="https://axios-http.com/ptbr/docs/intro">Axios</a>: utilizado para criar as chamadas HTTP para api do covid-19.<br>
 <a href="https://react.dev/">React</a> Bibliotéca utilizada para criar o sistema.<br>
 <a href="https://momentjs.com/">Moment</a> Utilizado para manipulação de datas.<br>
-<a href="https://mui.com/">Material-UI</a> Biblioteca utilizada para estilação do sistema.<br>
+<a href="https://mui.com/">Material-UI</a> Biblioteca utilizada para estilazação do sistema.<br>
 <a href="https://www.npmjs.com/package/react-router-dom">React-Router-Dom</a>Utilizado para criar as rotas do sistema.
 
 ## Funcionalidades do sistema
